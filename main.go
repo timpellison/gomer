@@ -15,8 +15,3 @@ func (g *Gomer) Calculate() (float64, error) {
 	}
 	return g.Revenue / g.MarketingExpense, nil
 }
-
-func MustNewGomer(revenue float64, marketingExpense float64) *Gomer {
-	v := &Gomer{Revenue: revenue, MarketingExpense: marketingExpense}
-	return v
-}
